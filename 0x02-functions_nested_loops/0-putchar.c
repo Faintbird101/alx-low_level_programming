@@ -1,21 +1,20 @@
 #include "main.h"
-	/**
-	 * main - print _putchar
-	 * is written by mbah
-	 * Return: 0
-	 */
 
+/**
+ * main - prints "_putchar" followed by a new line.
+ *
+ * Return: On Success 0.
+ */
+int main(void)
+{
+	int i = 0;
+	char str[] = "_putchar";
 
-	int main(void)
+	while (str[i] != 0)
 	{
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
+		_putchar(str[i]);
+		i++;
+	}
 	_putchar('\n');
 	return (0);
-	}
+}
